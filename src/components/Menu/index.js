@@ -5,7 +5,7 @@ export const Menu = () => {
     element.classList.add('menu')
 
     element.innerHTML = `
-    <div class="container">
+    <div id="menu">
       <h2>Naše nabídka</h2>
       <p class="menu-intro">
         Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu

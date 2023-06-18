@@ -5,7 +5,7 @@ export const Banner = () => {
     element.classList.add('banner')
 
     element.innerHTML = `
-        <div class="container">
+        <div id="home">
         <div class="banner__content">
             <h1>Přijď to ochutnat!</h1>
             <p>Nabízíme kvalitní kávu, útulné prostředí a perfektní servis.</p>

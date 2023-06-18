@@ -20,5 +20,19 @@ export const Header = () => {
     </div>
     `
 
+    const handleRollNav = () => {
+      element.querySelector('.rollout-nav').classList.toggle('nav-closed')
+    }
+
+    const closeNav = () => {
+      element.querySelector('.rollout-nav').classList.add('nav-closed')
+    }
+
+    const btnElm = element.querySelector('.nav-btn')
+    btnElm.addEventListener('click', handleRollNav)
+
+    const navElm = element.querySelector('.rollout-nav')
+    navElm.addEventListener('click', closeNav)
+
     return element
 }

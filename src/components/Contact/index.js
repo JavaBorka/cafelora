@@ -5,7 +5,7 @@ export const Contact = () => {
     const element = document.createElement('section')
 
     element.innerHTML = `
-        <div class="container">
+        <div id="contact">
         <h2>Kde nás najdete</h2>
         <div class="contact">
             <div class="contact__address">
