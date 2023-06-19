@@ -26,8 +26,7 @@
   box-shadow: 0 0 3px #444;
 }
 
-
-.drink {
+/* .drink {
   width: 20rem;
 }
 
@@ -53,7 +52,7 @@
   margin-top: 1rem;
 
   text-align: center;
-}
+} */
 
 .order-btn {
   width: 10rem;
@@ -85,7 +84,7 @@
   background-color: #e67e51;
 }
 
-
+/* 
 .layer {
   display: flex;
   padding: 0.25rem;
@@ -105,4 +104,4 @@
   height: 1rem;
 
   line-height: 1rem;
-}
+} */

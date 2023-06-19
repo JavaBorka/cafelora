@@ -1,5 +1,7 @@
 import './style.css'
 
+import { Drink } from './components/Drink'
+
 export const Menu = () => {
     const element = document.createElement('section')
     element.classList.add('menu')
@@ -10,77 +12,15 @@ export const Menu = () => {
       <p class="menu-intro">
         Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
       </p>
-      <div class="drinks-list">
-        <div class="drink">
-          <div class="drink__product">
-            <div class="drink__cup">
-              <img src="https://cafelora.kodim.app/assets/cups/espresso.png">
-            </div>
-            <div class="drink__info">
-              <h3>Espresso</h3>
-              <div class="layer">
-                <div class="layer__color" style="background-color: #613916"></div>
-                <div class="layer__label">espresso</div>
-              </div>
-            </div>
-          </div>
-          <div class="drink__controls">
-            <button class="order-btn">
-              Objednat
-            </button>
-          </div>
-        </div>
-
-        <div class="drink">
-          <div class="drink__product">
-            <div class="drink__cup">
-              <img src="https://cafelora.kodim.app/assets/cups/doppio.png">
-            </div>
-            <div class="drink__info">
-              <h3>Doppio</h3>
-              <div class="layer">
-                <div class="layer__color" style="background-color: #613916"></div>
-                <div class="layer__label">espresso</div>
-              </div>
-            </div>
-          </div>
-          <div class="drink__controls">
-            <button class="order-btn">
-              Objednat
-            </button>
-          </div>
-        </div>
-
-        <div class="drink">
-          <div class="drink__product">
-            <div class="drink__cup">
-              <img src="https://cafelora.kodim.app/assets/cups/lungo.png">
-            </div>
-            <div class="drink__info">
-              <h3>Lungo</h3>
-              <div class="layer">
-                <div class="layer__color" style="background-color: #b0dee1"></div>
-                <div class="layer__label">voda</div>
-              </div>
-              <div class="layer">
-                <div class="layer__color" style="background-color: #613916"></div>
-                <div class="layer__label">espresso</div>
-              </div>
-            </div>
-          </div>
-          <div class="drink__controls">
-            <button class="order-btn">
-              Objednat
-            </button>
-          </div>
-        </div>
-      </div>
+      <div class="drinks-list"></div>
 
       <div class="order-detail">
         <a href="/objednavka">Detail objednávky</a>
       </div>
     </div>
     `
+
+    element.querySelector('.drinks-list').append(Drink({name: 'Espresso', image: 'https://cafelora.kodim.app/assets/cups/romano.png'}))
 
     return element
 }
