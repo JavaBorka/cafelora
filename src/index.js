@@ -13,7 +13,7 @@ const pageElm = document.createElement('div')
 pageElm.classList.add('page')
 
 const mainElm = document.createElement('main')
-mainElm.append(Banner(), Menu(), Gallery(), Contact())
+mainElm.append(Banner(), Menu({drinks: 'loading'}), Gallery(), Contact())
 
 pageElm.append(Header(), mainElm, Footer())
 
