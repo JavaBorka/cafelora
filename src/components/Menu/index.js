@@ -26,7 +26,7 @@ export const Menu = (props) => {
       <a href="/objednavka">Detail objednávky</a>    
     `
     element.querySelector('#menu').append(orderDetailElm)
-    
+
 
   if (drinks === 'loading') {
     fetch(`https://cafelora.kodim.app/api/me/drinks`, {
@@ -41,13 +41,7 @@ export const Menu = (props) => {
       const drinks = data.result
       const drinksListElm = element.querySelector('.drinks-list')
       drinksListElm.append(
-        ...drinks.map((drink) => Drink(
-          {
-          name: drink.name,
-          image: drink.image,
-          id: drink.id
-          }
-        ))
+        ...drinks.map((drink) => Drink(drink))
       )
     })
   }
